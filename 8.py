@@ -1,6 +1,6 @@
 import turtle
 
-turtle.speed(100)
+#turtle.speed(100)
 turtle.pensize(5)
 
 turtle.screensize(600, 600)
@@ -21,7 +21,9 @@ def circleb(x, y, r, color):
     turtle.pu()
     turtle.goto(x, y)
     turtle.pd()
+    turtle.begin_fill()
     turtle.circle(r)
+    turtle.end_fill
     turtle.fillcolor(color)
     turtle.begin_fill()
     turtle.end_fill
